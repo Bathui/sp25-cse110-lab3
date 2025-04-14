@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="Meeting minutes for the group project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The meeting minutes</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
@@ -20,20 +21,6 @@
         <a href="#comments">Comments</a>
       </nav>
     </header>
-    
-    <section>
-      <h2>Optional Info Section</h2>
-      <details>
-        <summary><b>Click here to see extra notes about the meeting</b></summary>
-        <p>These notes are just for reference and not part of the official agenda.</p>
-        <ul>
-          <li>Michael will be the point of contact for GitHub issues</li>
-          <li>Jason suggested using Trello to track tasks</li>
-          <li>Next meeting might include a demo</li>
-        </ul>
-      </details>
-      <hr>
-    </section>
 
     <main>
       <section id="attendance">
@@ -116,28 +103,31 @@
           <fieldset>
             <legend>Feedback Form</legend>
             <label for="username">Name:</label>
-            <input type="aaaa" id="username" name="username"><br><br>
+            <input type="text" id="username" name="username"><br><br>
 
             <label for="birthday">Birthday:</label>
             <input type="date" id="birthday" name="birthday"><br><br>
 
             <label>Preferred Role:</label><br>
-            <input type="developer" id="leader" name="role" value="Leader"><label for="leader">Leader</label><br>
+            <input type="radio" id="leader" name="role" value="Leader"><label for="leader">Leader</label><br>
+            <input type="radio" id="developer" name="role" value="Developer"><label for="developer">Developer</label><br><br>
 
             <label>Skills:</label><br>
             <input type="checkbox" id="html" name="skills" value="HTML"><label for="html">HTML</label><br>
-            <input type="checkbox" id="css" name="skills" value="CSS"><label for="css">CSS</label><br><br>
+            <input type="checkbox" id="JavaScript" name="skills" value="JavaScript"><label for="JavaScript">JavaScript</label><br><br>
 
             <label for="tech">Favorite Tech:</label>
             <input list="tech-options" id="tech" name="tech">
             <datalist id="tech-options">
               <option value="C">
+              <option value="Python">
               <option value="C++">
             </datalist><br><br>
 
             <label for="experience">Experience Level:</label>
             <select id="experience" name="experience">
               <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
               <option value="advanced">Advanced</option>
             </select><br><br>
 
@@ -149,8 +139,8 @@
     </main>
 
     <footer>
-      <div>Hui. All rights reserved.</div>
-      <span>Thanks</span>
+      <div>&copy; 2025 Project Team. All rights reserved.</div>
+      <span>Thanks for visiting!</span>
     </footer>
   </body>
 </html>
