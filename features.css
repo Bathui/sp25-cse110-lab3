@@ -1,0 +1,163 @@
+/* Some styling features */
+@import url('https://fonts.google.com/');
+
+:root {
+    --main-color: #4a90e2;
+    --text-color: orange;
+    --bg-color: hsl(47, 64%, 73%);
+    --accent-color: rgb(50, 150, 100);
+}
+
+header {
+    display: block;
+    position: relative;
+    
+}
+
+section {
+    margin-top: 1rem;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    border: 1px solid #9a8484;
+    position: static
+}
+
+img {
+    margin: 1em 2em 1em 2em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(12, 137, 75);
+    border-radius: 5rem;
+}
+
+form {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    background-color: #e2e2db;
+}
+
+body {
+    background-color: var(--bg-color, #f1d581);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 2em;
+}
+
+#agenda > ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+#agenda > h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#comments > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*need one more flex*/
+#unfinished{
+    display: grid;
+    grid-gap: 1px;
+    align-items:center;
+    justify-items: center;
+    
+}
+
+@media (max-width: 1000px) {
+    .video_style {
+      flex-direction: row;
+    }
+}
+
+#attendance{
+    display: grid;
+    grid-gap: 2px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#new{
+    display: grid;
+    grid-gap: 1px;
+    align-items: center;
+    justify-content: flex-start;
+}
+h1 {
+    padding: 0.05em;
+    display: inline;
+    color: hsl(206, 93%, 27%);
+}
+
+h2, h3  {
+    color: color-mix(in srgb, var(--text-color) 70%, rgb(72, 41, 41));
+    color: rgb(128, 51, 204);
+}
+
+h4 {
+    color: rgb(204, 66, 66);
+    text-align: center;
+    text-decoration: underline;
+}
+
+h5 {
+    display: none;
+}
+
+nav a {
+    padding: 0.05em;
+    color: color(srgb 0.5 0.2 0.8);
+    color: rgb(128, 51, 204);
+    display: inline-block;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    padding: 2vh 3vh 20vh 3vh;
+    height: 5vh;
+    width: 50vh;
+    max-width: 100vh;
+    max-height: 10vh;
+}
+
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 2px;
+    box-sizing:content-box;
+}
+
+input[type = "submit"]{
+    background-color: rgb(20, 192, 135);
+}
+
+form:has(input:invalid){
+    border: 2px solid blue
+}
+
+#comments {
+    & h4 {
+      text-transform: uppercase;
+    }
+}
